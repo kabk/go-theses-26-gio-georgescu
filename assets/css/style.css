@@ -231,7 +231,7 @@ a:hover {
 
 figure {
   width: auto;
-  height: 10em;
+  /* height: 10em; */
   padding-bottom: 1em;
   padding-top: 0em;
 }
@@ -611,6 +611,7 @@ h2{
     opacity: 1;
     height: auto;
   }
+
   p, .noindent {
     font-size: 16px;
     color: black;
