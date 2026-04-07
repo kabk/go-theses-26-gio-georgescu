@@ -20,7 +20,7 @@
 } */
 
 @font-face {
-    font-family: 'Your Font Name';
+    font-family: 'HALT';
     src: url('../fonts/yourfontname/HALTimezoneUnlicensed-Regular.otf');
     font-weight: normal;
     font-style: normal;
@@ -29,7 +29,7 @@
 
 
 @font-face {
-    font-family: 'Your Font Name';
+    font-family: 'HALT';
     src: url('../fonts/yourfontname/HALTimezoneTest-Italic-1.otf');
     font-weight: normal;
     font-style: italic;
@@ -48,7 +48,7 @@
   --color-text-link: rgba(0,0,255,0.8);
   --color-text-link-hover: rgba(0,0,255,0.4);
   /* Font values */
-  --font-text: 'Your Font Name', 'Helvetica', 'Arial', sans-serif;
+  --font-text: 'HALT', 'Helvetica', 'Arial', sans-serif;
   --font-size: 24px;
   /* Margin values */
   --margin: 1rem;
@@ -206,7 +206,6 @@ a {
   text-decoration: underline;*/
   color: #282828;
   font-size: 20px;
-  font-size: 20px;
   text-indent: 2em;
   margin: 0;
   margin-left: 4em;
@@ -233,25 +232,27 @@ a:hover {
 figure {
   width: auto;
   height: 10em;
-  padding-top: 2.4em;
-
+  padding-bottom: 1em;
+  padding-top: 0em;
 }
 
 img{
   width: 90%;
+  padding-top: 3em;
   height: auto;
-    padding-bottom: 2.4em;
   display: block;
   margin: 0 auto;
+    padding-bottom: 1em;
   -webkit-mask-image: linear-gradient(to bottom, transparent, white 20%, white 80%, transparent);
   mask-image: linear-gradient(to bottom, transparent, white 20%, white 80%, transparent);
 }
 
 
 .img2{
+    padding-top: 3em;
   width: 70%;
   height: auto;
-    padding-bottom: 2.4em;
+    padding-bottom: 1em;
   display: block;
   margin: 0 auto;
   -webkit-mask-image: linear-gradient(to bottom, transparent, white 20%, white 80%, transparent);
@@ -361,6 +362,15 @@ text-indent: 0;
   font-weight: normal;
   font-variant: small-caps;
   
+}
+
+.captions{
+  color: #8f8e8e;
+  text-align: center;
+  text-indent: 0;
+  padding: 0;
+  font-style: italic;
+  font-size: 0.5em;
 }
 
 .colophon{
@@ -476,7 +486,136 @@ summary{
 
   /* your 'mobile' overriding css properties here */
 
+.fullscreen{
+  opacity: 0.15;
+}
+.webpagetitle h7 {
+  position: absolute;
+  top: 3em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-variant: small-caps;
+  color: #8f8e8e;
+  text-align: center;
+  font-size: .75em;
+  font-weight: normal;
+}
 
+.webpagetitle h6 {
+  position: absolute;
+  top: 7em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-variant: small-caps;
+  color:#8f8e8e;
+  text-align: center;
+  font-size: .75em;
+  font-weight: normal;
+  
+}
+
+  .abstract{
+  width: 95%;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: .75em;
+  line-height: 1.3em;
+  letter-spacing: 0.1;
+  text-indent: 0;
+  color:#8f8e8e;
+  padding-top: 0;
+  padding-bottom: 5em;
+}
+
+.abstracttitle{
+  margin: 0;
+  text-indent: 0;
+  text-align: center;
+  font-size: .75em;
+  color:#8f8e8e;
+
+  font-weight: normal;
+  font-variant: small-caps;
+  padding-bottom: 1em;
+  padding-top:0 em;
+}
+
+.afterwordtitle{
+padding-top: 4em;
+padding-bottom: 1.2em;
+font-size: 0.75em;
+}
+
+h2{
+  font-size: 0.75em;
+  padding-bottom: 1em;
+}
+
+.afterwordleft{
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.3em;
+  letter-spacing: -0.02em;
+  text-indent: 2.6em;
+  letter-spacing: 0em;
+  padding-left: 2em;
+  padding-bottom: 0;
+}
+.last-quote-author, .quote-author, .last-quote-author{
+  font-size: .5em;
+
+}
+
+.captions{
+  color: #8f8e8e;
+  text-align: center;
+  text-indent: 0;
+  padding: 0;
+}
+
+.colophontitle{
+  margin: 0;
+  text-indent: 0;
+  text-align: center;
+  font-size: .75em;
+  color:rgb(0, 195, 255);
+  
+  font-weight: normal;
+  font-variant: small-caps;
+  
+}
+
+.colophon{
+  text-align:center;
+  
+  font-size: .5em;
+  line-height: 1.3em;
+  letter-spacing: -0.02em;
+  text-indent: 0;
+  color: rgb(0, 195, 255);
+  padding-top: 1.3em;
+  padding-bottom: 3.9em;
+  
+}
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column-left, .column-right {
+    width: 100%;
+  }
+  figure {
+    opacity: 1;
+    height: auto;
+  }
+  p, .noindent {
+    font-size: 16px;
+    color: black;
+    
+  }
 
   /* utility classes, mobile */
 
@@ -487,6 +626,9 @@ summary{
   .mobile-only{
     display:block;
   }
+
+
+
 
 }
 
