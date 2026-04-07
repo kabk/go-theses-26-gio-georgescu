@@ -78,6 +78,23 @@ html {
   background-color: var(--color-background);
 }
 
+.fade-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 5%;
+
+  pointer-events: none; /* allows clicking through */
+
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1) 100%
+    rgba(255, 255, 255, 0) 0%
+  );
+}
+
 .fullscreen {
       width: 100vw;
       height: 100vh;
@@ -87,7 +104,8 @@ html {
       justify-content: center; /* horizontal center */
       align-items: center;
       opacity: 0.5;
-      mask-image: linear-gradient(to bottom, white, rgba(0,0,0,0) 85%, transparent);
+      padding-top: 0;
+      
     }
 
 .webpagetitle {
@@ -118,43 +136,6 @@ html {
   font-size: .75em;
   font-weight: normal;
 }
-
-ol, ul{
-  list-style: none;
-  width:100%;
-  text-align: center;
-  font-size: .75em;
-  letter-spacing: -0.02em;
-}
-
-.navbar{
-  position: fixed;
-  top: 0;
-
-  background: linear-gradient(to bottom, white 85%, transparent);
-}
-
-.navbar ul {
-  width: auto;
-  list-style: none;
-  margin: 0;
-  padding: 1em;
-  display: flex;
-  gap: 1em;
-  justify-content: center;
-}
-
-.navbar a {
-  color:#8f8e8e;
-  text-decoration: none;
-  font-size: 1em;
-  font-variant: small-caps;
-}
-
-.navbar a:hover {
-  text-decoration: underline;
-}
-
 
 
 .abstract{
